@@ -44,6 +44,15 @@ console.log(classifyNumber(-7)); // "negative odd"
 // If score is less than 0 or greater than 100, return "Invalid score".
 function getLetterGrade(score) {
   // TODO: your code here
+  if(score<100 && score>=90){
+    return "A"
+  } else if(score>=80 && score<=89){
+    return "B"
+  } else if(score>=70 && score<=79){
+    return "C"
+  } else if(score>=60 && score<=69){
+    return "D"
+  }
 }
 
 console.log(getLetterGrade(95)); // "A"
